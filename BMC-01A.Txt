@@ -1,0 +1,40 @@
+/* Connections:
+ *
+ * Motor PHASE_A: yellow wire
+ * Motor PHASE_B: blue wire
+ * Motor PHASE_C: green wire
+ *
+ *
+ * PIN                | IN/OUT| Works?|Function
+ * ----------------------------------------------------------
+ *
+ * PA3  (ADC12_IN3)   | in  | yes  | current_phase_A
+ * PA2  (ADC12_IN2)   | in  | yes  | current_phase_C
+ *
+ * PA4  (ADC12_IN4)   | in  | yes  | battery_voltage
+ *
+ * PB12               | in  | yes  | Hall_sensor_A
+ * PB13               | in  | yes  | Hall_sensor_B
+ * PB14               | in  | yes  | Hall_sensor_C
+ *
+ * PB6  (I2C1_SCL)    | in/out| yes  | IMU_MPU6050-SCL
+ * PB7  (I2C1_SDA)    | in/out| yes  | IMU_MPU6050-SDA
+ *
+ * PB1  (TIM3_CH4)    | out | yes  | phase_A-HO_LO
+ * PB0  (TIM3_CH3)    | out | yes  | phase_B-HO_LO
+ * PA6  (TIM3_CH1)    | out | yes  | phase_C-HO_LO
+ * PB2                | out | yes  | phase_A-shutdown
+ * PA7                | out | yes  | phase_B-shutdown
+ * PA5                | out | yes  | phase_C-shutdown
+ *
+ * PA9  (USART1_TX)   | out | yes  | usart_tx
+ * PA10 (USART1_RX)   | out | yes  | usart_rx
+ *
+ * PA8                | out | yes | buzzer      (active high: push pull)
+ *
+ * PB15               | out | yes  | LED_1-battery_indicator (active low: float to disable and GND to turn on)
+ * PA11               | out | yes  | LED_2-battery_indicator (active low: float to disable and GND to turn on)
+ * PA12               | out | yes  | LED_3-battery_indicator (active low: float to disable and GND to turn on)
+ * PB5                | out | yes  | LED_4-battery_indicator (active low: float to disable and GND to turn on)
+ *
+ */
